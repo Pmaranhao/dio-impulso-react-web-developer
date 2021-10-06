@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Fundamentos - Justify-Content</title>
+
+        <style>
+            .container{
+                max-width: 400px;
+                border: 3px solid;
+                margin: 0;
+                display: flex;
+            }
+
+            .item{
+                background-color: rgb(149, 180, 149);
+                margin: 5px;
+                text-align: center;
+                color: brown;
+            }
+
+            .container-column{
+                max-width: 400px;
+                border: 3px solid;
+                margin: 0;
+                display: flex;
+                flex-direction: column;
+                min-height: 200px;
+            }
+
+            .item-column{
+                background-color: rgb(240, 207, 23);
+                margin: 5px;
+                text-align: center;
+                color: brown;
+            }
+
+            .flex-start{
+                justify-content: flex-start;
+            }
+
+            .flex-end{
+                justify-content: flex-end;
+            }
+
+            .center{
+                justify-content: center;
+            }
+
+            .space-between{
+                justify-content: space-between;
+            }
+
+            .space-around{
+                justify-content:space-around;
+            }
+        </style>
+
+    </head>
+    <body>
+        <h1>ROW</h1>
+        <h1>Flex Start</h1>
+        <section class="container flex-start">
+            <div class="item">1</div>
+            <div class="item">2</div>
+            <div class="item">3</div>
+        </section>
+
+        <h1>Flex End</h1>
+        <section class="container flex-end">
+            <div class="item">1</div>
+            <div class="item">2</div>
+            <div class="item">3</div>
+        </section>
+
+        <h1>Center</h1>
+        <section class="container center">
+            <div class="item">1</div>
+            <div class="item">2</div>
+            <div class="item">3</div>
+        </section>
+
+        <h1>Space Between</h1>
+        <section class="container space-between">
+            <div class="item">1</div>
+            <div class="item">2</div>
+            <div class="item">3</div>
+        </section>
+
+        <h1>Space Around</h1>
+        <section class="container space-around">
+            <div class="item">1</div>
+            <div class="item">2</div>
+            <div class="item">3</div>
+        </section>
+
+        <h1>COLUNAS</h1>
+        <h1>Flex Start</h1>
+        <section class="container-column flex-start">
+            <div class="item-column">1</div>
+            <div class="item-column">2</div>
+            <div class="item-column">3</div>
+        </section>
+
+        <h1>Flex End</h1>
+        <section class="container-column flex-end">
+            <div class="item-column">1</div>
+            <div class="item-column">2</div>
+            <div class="item-column">3</div>
+        </section>
+
+        <h1>Center</h1>
+        <section class="container-column center">
+            <div class="item-column">1</div>
+            <div class="item-column">2</div>
+            <div class="item-column">3</div>
+        </section>
+
+        <h1>Space Between</h1>
+        <section class="container-column space-between">
+            <div class="item-column">1</div>
+            <div class="item-column">2</div>
+            <div class="item-column">3</div>
+        </section>
+
+        <h1>Space Around</h1>
+        <section class="container-column space-around">
+            <div class="item-column">1</div>
+            <div class="item-column">2</div>
+            <div class="item-column">3</div>
+        </section>
+    </body>
+</html>
